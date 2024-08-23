@@ -20,5 +20,5 @@ int main(void) {
     printf("Escolha moeda de saída: ");
     scanf("%i", &moeda_saida);
 
-    if ()
+    if (moeda_entrada == 1)
 }

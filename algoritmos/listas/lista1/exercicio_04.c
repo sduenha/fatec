@@ -12,7 +12,8 @@ int main(void) {
     printf("Antes da troca: \na = %i\nb = %i\n\n", a, b);
 
     a = a + b;
-    b = b + a;
+    b = a - b;
+    a = a - b;
 
     printf("Depois da troca: \na = %i\nb = %i\n\n", a, b);
 

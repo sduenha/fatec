@@ -22,4 +22,5 @@ int main(void) {
     printf("Escolha moeda de saída: ");
     scanf("%i", &moeda_saida);
 
+    printf("O valor da moeda é: %.2f\n", moedas[moeda_saida - 1]);
 }

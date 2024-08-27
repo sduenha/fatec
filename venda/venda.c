@@ -13,7 +13,5 @@ int main(void) {
     printf("Porcentagem da comissão: ");
     scanf("%i", &percentual);
 
-    printf("O vendedor %i vendeu um produto de R$%f e terá um comissão de R$%f\n", vendedor, venda, venda * percentual / 100);
-    
-
+    printf("O vendedor %i vendeu um produto de R$%.2f e terá um comissão de R$%.2f\n", vendedor, venda, venda * percentual / 100);
 }

@@ -8,7 +8,7 @@ int main(void) {
     float euro = 0.16;
     float iene = 26.32;
     float renminbi = 1.28;
-    float moedas[4] = {dolar, euro, iene, renminbi}
+    float moedas[4] = {dolar, euro, iene, renminbi};
 
     printf("1 - Real\n2 - Dolar\n3 - Euro\n4 - Iene\n5 - Renminbi\n");
     printf("Escolha moeda de entrada: ");

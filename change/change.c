@@ -9,13 +9,15 @@ int main(void) {
     printf("Valor 2: ");
     scanf("%i", &v2);
 
+    printf("\nAntes:\n");
     printf("v1 = %i\n", v1);
-    printf("v2 = %i\n", v2);
+    printf("v2 = %i\n\n", v2);
 
     v3 = v2;
     v2 = v1;
-    v1 = v2;
+    v1 = v3;
 
+    printf("Depois:\n");
     printf("v1 = %i\n", v1);
     printf("v2 = %i\n", v2);
 }

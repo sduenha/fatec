@@ -20,5 +20,5 @@ int main(void) {
     printf("Escolha moeda de saída: ");
     scanf("%i", &moeda_saida);
 
-    printf("%i, %i, %f", moeda_entrada, moeda_saida, valor);
+    printf("%i, %i, %f\n", moeda_entrada, moeda_saida, valor);
 }

@@ -9,16 +9,16 @@ int main(void) {
     float iene = 26.32;
     float renminbi = 1.28;
 
-    printf("1 - Dolar\n2 - Euro\n3 - Iene\n4 - Renminbi\n");
+    printf("1 - Real\n2 - Dolar\n3 - Euro\n4 - Iene\n5 - Renminbi\n");
     printf("Escolha moeda de entrada: ");
     scanf("%i", &moeda_entrada);
 
     printf("Digite o valor para converter: ");
     scanf("%f", &valor);
 
-    printf("1 - Dolar\n2 - Euro\n3 - Iene\n4 - Renminbi\n");
+    printf("1- Real\n2 - Dolar\n3 - Euro\n4 - Iene\n5 - Renminbi\n");
     printf("Escolha moeda de saída: ");
     scanf("%i", &moeda_saida);
 
-    if (moeda_entrada == 1)
+    printf(moeda_entrada, moeda_saida, valor);
 }

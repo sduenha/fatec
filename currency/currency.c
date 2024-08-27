@@ -27,4 +27,6 @@ int main(void) {
     valor_saida = valor_entrada_real * moedas[moeda_saida - 1];
 
     printf("O valor de saida é: %.2f\n", valor_saida);
+    
+    return 0;
 }

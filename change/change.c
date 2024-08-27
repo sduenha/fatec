@@ -20,4 +20,6 @@ int main(void) {
     printf("Depois:\n");
     printf("v1 = %i\n", v1);
     printf("v2 = %i\n", v2);
+
+    return 0;
 }

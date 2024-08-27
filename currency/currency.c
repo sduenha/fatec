@@ -2,7 +2,7 @@
 
 int main(void) {
     int moeda_entrada, moeda_saida;
-    float valor;
+    float valor, novo_valor;
 
     float real = 1;
     float dolar = 0.18;
@@ -18,7 +18,7 @@ int main(void) {
     printf("Digite o valor para converter: ");
     scanf("%f", &valor);
 
-    float novo_valor = valor / moedas[moeda_entrada - 1];
+    valor_entrada = valor * moedas[moeda_entrada - 1];
 
     printf("1- Real\n2 - Dolar\n3 - Euro\n4 - Iene\n5 - Renminbi\n");
     printf("Escolha moeda de saída: ");

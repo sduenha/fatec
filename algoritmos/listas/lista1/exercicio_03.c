@@ -5,10 +5,11 @@ int main(void) {
     int x;
     float resultado;
 
+    printf("Resolvendo a expressão: f(x) = sqrt(x) + (x/2) + x^x\n");
     printf("Insira um valor para x: ");
     scanf("%i", &x);
 
     resultado = sqrt(x) + (x / 2) + pow(x, x);
 
-    printf("O valor de f(x) = sqrt(x) + (x/2) + x^x para x = %i é: %.2f\n", x, resultado);
+    printf("f(%i) = %.2f\n", x, resultado);
 }

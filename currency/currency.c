@@ -24,6 +24,7 @@ int main(void) {
     printf("Escolha moeda de saída: ");
     scanf("%i", &moeda_saida);
 
-    printf("O valor de entrada é: %.2f\n", valor_entrada_real);
+    valor_saida = valor_entrada_real * moedas[moeda_saida - 1];
+
     printf("O valor de saida é: %.2f\n", valor_saida);
 }

@@ -8,4 +8,12 @@ int main(void) {
 
     printf("Escolha o valor de b: ");
     scanf("%i", &b);
+
+    printf("Antes da troca: \na = %i\nb = %i\n\n", a, b);
+
+    a = a + b;
+    b = b + a;
+
+    printf("Depois da troca: \na = %i\nb = %i\n\n", a, b);
+
 }

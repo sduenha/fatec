@@ -10,5 +10,5 @@ int main(void) {
 
     resultado = sqrt(x) + (x / 2) + pow(x, x);
 
-    printf("O valor de f(x) = sqrt(x) + (x/2) + x^x para x = %i é: %f\n", x, resultado);
+    printf("O valor de f(x) = sqrt(x) + (x/2) + x^x para x = %i é: %.2f\n", x, resultado);
 }

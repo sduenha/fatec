@@ -5,4 +5,6 @@ int main(void) {
 
     printf("Valor da venda: ");
     scanf("%f", &venda);
+
+    
 }

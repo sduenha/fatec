@@ -3,7 +3,6 @@
 
 int main(void) {
     int a, b, c, maior;
-    
 
     printf("Insira os valores de um triângulo:\n");
     printf("A: ");
@@ -13,16 +12,16 @@ int main(void) {
     scanf("%i", &b);
 
     if (a > b) {
-        maior = a;
+        maior = 0;
     }; else {
-        maior = b;
+        maior = 1;
     };
 
     printf("C: ");
     scanf("%i", &c);
 
     if (c > maior) {
-        maior = c;
+        maior = 2;
     };
 
     if(a == b && b == c) {

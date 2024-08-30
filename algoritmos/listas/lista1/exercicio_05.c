@@ -12,16 +12,16 @@ int main(void) {
     scanf("%i", &b);
 
     if (a > b) {
-        maior = 0;
+        maior = a;
     }; else {
-        maior = 1;
+        maior = b;
     };
 
     printf("C: ");
     scanf("%i", &c);
 
     if (c > maior) {
-        maior = 2;
+        maior = c;
     };
 
     if(a == b && b == c) {

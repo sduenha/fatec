@@ -6,6 +6,7 @@ int main(void) {
     printf("Digite um valor: ");
     scanf("%i", &num);
 
+
     if (num >= 100) {
         if (num % 2 == 0){
             printf("Par e maior ou igual a 100\n");

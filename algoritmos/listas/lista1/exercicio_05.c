@@ -3,6 +3,7 @@
 
 int main(void) {
     int a, b, c, maior;
+    
 
     printf("Insira os valores de um triângulo:\n");
     printf("A: ");

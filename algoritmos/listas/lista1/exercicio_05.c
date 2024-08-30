@@ -33,7 +33,8 @@ int main(void) {
         printf("O Triângulo é equilátero!\n");
     }else if (a != b && b != c && c != a) {
         printf("O Triângulo é escaleno!\n");
-    }else if (a == b || ) {
+    }else if (a == b || b == c || c == a) {
+        printf("O Triângulo é isósceles!\n");
     }
 
     if (hipotenusa == catetos) {

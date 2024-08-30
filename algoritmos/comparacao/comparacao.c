@@ -7,16 +7,16 @@ int main(void) {
     scanf("%i", &num);
 
     if (num >= 100) {
-        if (num % 2){
-            printf("Par e maior ou igual a 100");
+        if (num % 2 == 0){
+            printf("Par e maior ou igual a 100\n");
         } else {
-            printf("Ímpar maior ou igual a 100");
+            printf("Ímpar maior ou igual a 100\n");
         }
     } else {
-        if (num % 2) {
-            printf("Par menor que 100");
+        if (num % 2 == 0) {
+            printf("Par menor que 100\n");
         } else {
-            printf("Ímpar menos que 100");
+            printf("Ímpar menos que 100\n");
         }
     }
 }

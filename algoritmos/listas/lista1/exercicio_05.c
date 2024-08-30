@@ -30,10 +30,15 @@ int main(void) {
     };
 
     if(a == b && b == c) {
-        printf("O Triângulo é isósceles!\n");
-    }else if (hipotenusa == catetos) {
-        printf("O Triângulo é retângulo!\n");
-    }else {
-        printf("O Triângulo é ")
+        printf("O Triângulo é equilátero!\n");
+    }else if (a != b && b != c && c != a) {
+        printf("O Triângulo é escaleno!\n");
+    }else if (a == b || ) {
     }
+
+    if (hipotenusa == catetos) {
+        printf("O Triângulo é retângulo!\n");
+    };
+
+    return 0;
 }

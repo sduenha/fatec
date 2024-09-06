@@ -17,5 +17,5 @@ int main(void) {
     }
 
     printf("O maior valor é o %i\n", maior);
-    
+    return 0;
 }

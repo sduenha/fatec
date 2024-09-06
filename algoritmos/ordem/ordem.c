@@ -15,11 +15,19 @@ int main(void) {
             return 0;
         }
     } else if (b > a && b > c) {
-            if (a > c) {
+        if (a > c) {
             printf("%i %i %i", b, a, c);
             return 0;
         } else {
             printf("%i %i %i", b, c, a);
+            return 0;
+        }
+    } else if (c > a && c > b) {
+        if (a > b) {
+            printf("%i %i %i", c, a, b);
+            return 0;
+        } else {
+            printf("%i %i %i", c, b, a);
             return 0;
         }
     }

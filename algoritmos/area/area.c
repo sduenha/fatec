@@ -6,6 +6,8 @@ int main(void) {
     printf("Escolha o objeto para calcular a área: \nq: Quadrado\nr: Retângulo\nc: Círculo\nEscolha: ");
     scanf("%c", &tipo);
 
+    printf("%i", tipo);
+
     if (tipo == "q"){
         printf("Insira as dimensões (tamanho do lado): ");
         scanf("%f", &lado1);
@@ -24,4 +26,5 @@ int main(void) {
         printf("Valor inválido!\n");
         return 1;
     }
+
 }

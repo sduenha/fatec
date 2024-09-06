@@ -8,26 +8,26 @@ int main(void) {
 
     if (a > b && a > c) {
         if (b > c) {
-            printf("%i %i %i", a, b, c);
+            printf("%i %i %i\n", a, b, c);
             return 0;
         } else {
-            printf("%i %i %i", a, c, b);
+            printf("%i %i %i\n", a, c, b);
             return 0;
         }
     } else if (b > a && b > c) {
         if (a > c) {
-            printf("%i %i %i", b, a, c);
+            printf("%i %i %i\n", b, a, c);
             return 0;
         } else {
-            printf("%i %i %i", b, c, a);
+            printf("%i %i %i\n", b, c, a);
             return 0;
         }
     } else if (c > a && c > b) {
         if (a > b) {
-            printf("%i %i %i", c, a, b);
+            printf("%i %i %i\n", c, a, b);
             return 0;
         } else {
-            printf("%i %i %i", c, b, a);
+            printf("%i %i %i\n", c, b, a);
             return 0;
         }
     }

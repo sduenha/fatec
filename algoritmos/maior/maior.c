@@ -3,20 +3,14 @@
 int main(void) {
     int a, b, c, maior;
 
-    printf("Digite o primeiro valor: ");
-    scanf("%i", &a);
-
-    printf("Digite o segundo valor: ");
-    scanf("%i", &b);
+    printf("Digite 3 valores: ");
+    scanf("%i %i %i", &a, &b, &c);
 
     if (a > b) {
         maior = a;
     } else {
         maior = b;
     }
-
-    printf("Digite o terceiro valor: ");
-    scanf("%i", &c);
 
     if (c > maior) {
         maior = c;

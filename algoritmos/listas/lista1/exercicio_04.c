@@ -16,5 +16,4 @@ int main(void) {
     a = a - b;
 
     printf("Depois da troca: \na = %i\nb = %i\n\n", a, b);
-
 }

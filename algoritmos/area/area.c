@@ -4,11 +4,11 @@ int main(void) {
     char tipo;
     float lado1, lado2, raio;
     printf("Escolha o objeto para calcular a área: \nq: Quadrado\nr: Retângulo\nc: Círculo\nEscolha: ");
-    scanf("%c", &tipo);
+    scanf("%i", &tipo);
 
-    printf("%i", tipo);
+    printf("%c\n", tipo);
 
-    if (tipo == "q"){
+    if (tipo == 113){
         printf("Insira as dimensões (tamanho do lado): ");
         scanf("%f", &lado1);
 

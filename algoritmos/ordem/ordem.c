@@ -14,5 +14,13 @@ int main(void) {
             printf("%i %i %i", a, c, b);
             return 0;
         }
+    } else if (b > a && b > c) {
+            if (a > c) {
+            printf("%i %i %i", b, a, c);
+            return 0;
+        } else {
+            printf("%i %i %i", b, c, a);
+            return 0;
+        }
     }
 }

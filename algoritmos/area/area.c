@@ -19,7 +19,7 @@ int main(void) {
     }else if(tipo == 99) {
         printf("Insira o raio: ");
         scanf("%f", &raio);
-        printf("A área desse círculo é %.2f\n", (3,14) * raio * raio);
+        printf("A área desse círculo é %.2f\n", (3.14) * raio * raio);
     } else {
         printf("Valor inválido!\n");
         return 1;

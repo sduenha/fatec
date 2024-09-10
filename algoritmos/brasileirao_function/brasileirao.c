@@ -29,7 +29,7 @@ int main(void) {
 }
 
 int comparacao(int a, int b, int ordem) {
-    if (ordem) {
+    if (!ordem) {
         if(a > b) {
             vencedor = a;
             return 1;

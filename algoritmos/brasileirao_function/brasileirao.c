@@ -32,7 +32,6 @@ int comparacao(int value_a, int value_b, int ordem) {
     if (!ordem) {
         if(value_a > value_b) {
             vencedor = 'A';
-            printf("%i\n", vencedor);
             return 1;
         } else if (value_b > value_a) {
             vencedor = 'B';

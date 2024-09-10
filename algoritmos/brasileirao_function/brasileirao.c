@@ -28,24 +28,24 @@ int main(void) {
     }
 }
 
-int comparacao(int a, int b, int ordem) {
+int comparacao(int value_a, int value_b, int ordem) {
     if (!ordem) {
-        if(a > b) {
-            vencedor = "A";
-            printf("%c\n", vencedor);
+        if(value_a > value_b) {
+            vencedor = 'A';
+            printf("%i\n", vencedor);
             return 1;
-        } else if (b > a) {
-            vencedor = b;
+        } else if (value_b > value_a) {
+            vencedor = 'B';
             return 2;
         } else {
             return 0;
         }
     } else {
-        if (a > b) {
-            vencedor = b;
+        if (value_a > value_b) {
+            vencedor = 'B';
             return 2;
-        } else if (b > a){
-            vencedor = a;
+        } else if (value_b > value_a){
+            vencedor = 'A';
             return 1;
         } else {
             return 0;

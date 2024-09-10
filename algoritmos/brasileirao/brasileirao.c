@@ -33,14 +33,14 @@ int main(void) {
                     if (amarelos_a == amarelos_b) {
                         printf("Os times continuam empatados!\n");
                     } else if (amarelos_a > amarelos_b) {
-                        printf("O time A vence!\n");
-                    } else {
                         printf("O time B venceu!\n");
+                    } else {
+                        printf("O time A vence!\n");
                     }
                 } else if (vermelhos_a > vermelhos_b) {
-                    printf("O time A venceu!\n");
-                } else {
                     printf("O time B venceu!\n");
+                } else {
+                    printf("O time A venceu!\n");
                 }
             } else if (gols_a > gols_b) {
                 printf("O time A venceu!\n");

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// char comparacao(int a, int b);
+char comparacao(int a, int b, int ordem);
 
 int main(void) {
     int valores_a[5], valores_b[5];
@@ -14,9 +14,6 @@ int main(void) {
 
     printf("Vitórias do time B: ");
     scanf("%i", &valores_b[0]);
-
-
-    // comparacao(valor_a, valor_b, 0);
 }
 
 char comparacao(int a, int b, int ordem) {

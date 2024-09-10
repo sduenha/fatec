@@ -21,7 +21,7 @@ int main(void) {
             return 0;
         }
 
-        if (i == 5 && vencedor_num == 0) {
+        if (i == 4 && vencedor_num == 0) {
             printf("Os times continuam empatados!\n");
             return 0;
         }

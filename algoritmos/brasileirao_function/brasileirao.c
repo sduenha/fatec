@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int comparacao(int a, int b, int ordem);
+char vencedor;
 
 int main(void) {
     int valores_a[5], valores_b[5];
@@ -25,9 +26,9 @@ int main(void) {
 int comparacao(int a, int b, int ordem) {
     if (ordem) {
         if(a > b) {
-            return a;
+            vencedor = a;
         } else if (b > a) {
-            return b;
+            vencedor b;
         } else {
             return 0;
         }

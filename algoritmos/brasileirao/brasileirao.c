@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(void) {
-    int vitoria_a, vitoria_b, saldo_a, saldo_b, gols_a, gols_b, vermelhos_a, vermelhos_b, amarelos_a, amarelos_b, vencedor_a, vencedor_b;
+    int vitorias_a, vitorias_b, saldo_a, saldo_b, gols_a, gols_b, vermelhos_a, vermelhos_b, amarelos_a, amarelos_b, vencedor_a, vencedor_b;
 
     printf("Informações sobre os times: \n"); 
     printf("Primeiro time: \n Vitorias: ");
-    scanf("%i", &vitoria_a);
+    scanf("%i", &vitorias_a);
     printf(" Saldo de Gols: ");
     scanf("%i", &saldo_a);
     printf(" Gols: ");
@@ -16,7 +16,7 @@ int main(void) {
     scanf("%i", &amarelos_a);
 
     printf("Segundo time: \n Vitorias: ");
-    scanf("%i", &vitoria_b);
+    scanf("%i", &vitorias_b);
     printf(" Saldo de Gols: ");
     scanf("%i", &saldo_b);
     printf(" Gols: ");
@@ -26,44 +26,37 @@ int main(void) {
     printf(" Amarelos: ");
     scanf("%i", &amarelos_b);
 
-    if (vitoria_a > vitoria_b) {
-        vencedor_a ++;
+    if (vitorias_a == vitorias_b) {
+        if (saldo_a == saldo_b) {
+            if (gols_a == gols_b) {
+                if (vermelhos_a == vermelhos_b) {
+                    if (amarelos_a == amarelos_b) {
+                        printf("Os times continuam empatados!\n");
+                    } else if (amarelos_a > amarelos_b) {
+                        printf("O time A vence!\n");
+                    } else {
+                        printf("O time B venceu!\n");
+                    }
+                } else if (vermelhos_a > vermelhos_b) {
+                    printf("O time A venceu!\n");
+                } else {
+                    printf("O time B venceu!\n");
+                }
+            } else if (gols_a > gols_b) {
+                printf("O time A venceu!\n");
+            } else {
+                printf("O time B venceu!\n");
+            }
+        } else if (saldo_a > saldo_b) {
+            printf("O time A venceu!\n");
+        } else {
+            printf("O time B venceu!\n");
+        }
+    } else if (vitorias_a > vitorias_b) {
+        printf("O time A venceu!\n");
     } else {
-        vencedor_b ++;
-    }
-
-    if (saldo_a > saldo_b) {
-        vencedor_a ++;
-    } else {
-        vencedor_b ++;
-    }
-
-    if (gols_a > gols_b) {
-        vencedor_a ++;
-    } else {
-        vencedor_b ++;
-    }
-
-    if (vermelhos_a > vermelhos_b) {
-        vencedor_b ++;
-    } else {
-        vencedor_a ++;
-    }
-
-    if (amarelos_a > amarelos_b) {
-        vencedor_b ++;
-    } else {
-        vencedor_a ++;
-    }
-
-    if (vencedor_a > vencedor_b) {
-        printf("O vencedor é o time A\n");
-    } else if(vencedor_b > vencedor_a) {
-        printf("O vencedor é o time B\n");
-    } else {
-        printf("O times continuam empatados\n");
+        printf("O time B venceu!\n");
     }
 
     return 0;
-
 }

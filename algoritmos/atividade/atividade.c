@@ -9,9 +9,6 @@ int main(void) {
     printf("Insira outra data (somente os números): ");
     scanf("%i %i %i", &dia2, &mes2, &ano2);
 
-    printf("%i %i %i\n", dia1, mes1, ano1);
-    printf("%i %i %i\n", dia2, mes2, ano2);
-
     if (dia1 > 31 || dia1 < 1 || dia2 > 31 || dia2 < 1) {
         printf("Os dias forncecidos são inválidos\n");
         return 0;

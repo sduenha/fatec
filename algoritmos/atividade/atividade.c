@@ -5,9 +5,7 @@ int main(void) {
     int dia1, dia2, mes1, mes2, ano1, ano2;
 
     // Pedindo ao usuário a primeira data
-    printf("Insira uma data (somente os números)\n");
-    printf("Como o exemplo: 19 8 2024\n");
-    printf("Sua data: ");
+    printf("Insira uma data (dd mm aaaa): ");
     scanf("%d %d %d", &dia1, &mes1, &ano1);
 
     // Validando a primeira data
@@ -47,7 +45,7 @@ int main(void) {
     }
 
     // Pedindo a segunda data
-    printf("Insira outra data (somente os números): ");
+    printf("Insira outra data (dd mm aaaa): ");
     scanf("%d %d %d", &dia2, &mes2, &ano2);
 
     // Validando a segunda data

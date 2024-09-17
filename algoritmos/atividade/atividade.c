@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
+    // Inicializando as variáveis
     int dia1, dia2, mes1, mes2, ano1, ano2;
 
+    // Pedindo ao usuário a primeira data
     printf("Insira uma data (somente os números)\n");
     printf("Como o exemplo: 19 8 2024\n");
     printf("Sua data: ");
     scanf("%d %d %d", &dia1, &mes1, &ano1);
+
+    // Validando a primeira data
     if (mes1 == 4 || mes1 == 6 || mes1 == 9 || mes1 == 11) {
         if (dia1 > 30) {
             printf("O dia da primeira data é inválido\n");

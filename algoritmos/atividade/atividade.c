@@ -53,11 +53,14 @@ int main(void) {
                 return 0;
             }
         }
-    } else {
+    } else if (mes2 == 1 || mes2 == 3 || mes2 == 5 || mes2 == 7 || mes2 == 8 || mes2 == 10 || mes2 == 12) {
         if (dia2 > 31) {
             printf("O dia da segunda data é inválido\n");
             return 0;
         }
+    } else {
+        printf("O mês da segunda data é inválido\n");
+        return 0;
     }
 
     if (ano1 == ano2) {

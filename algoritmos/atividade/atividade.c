@@ -34,6 +34,11 @@ int main(void) {
         return 0;
     }
 
+    if (ano1 < 1) {
+        printf("Ano da primeira data inválido!\n");
+        return 0;    
+    }
+
     printf("Insira outra data (somente os números): ");
     scanf("%d %d %d", &dia2, &mes2, &ano2);
     if (mes2 == 4 || mes2 == 6 || mes2 == 9 || mes2 == 11) {
@@ -61,6 +66,11 @@ int main(void) {
     } else {
         printf("O mês da segunda data é inválido\n");
         return 0;
+    }
+
+    if (ano2 < 1) {
+        printf("Ano da primeira data inválido!\n");
+        return 0;    
     }
 
     if (ano1 == ano2) {

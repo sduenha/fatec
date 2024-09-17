@@ -11,6 +11,11 @@ int main(void) {
     scanf("%d %d %d", &dia1, &mes1, &ano1);
 
     // Validando a primeira data
+    // Verificando o ano da primeira data
+    if (ano1 < 1) {
+        printf("Ano da primeira data inválido!\n");
+        return 0;    
+    }
     // Verificando se o número de dias condiz com o mês
     if (mes1 == 4 || mes1 == 6 || mes1 == 9 || mes1 == 11) {
         if (dia1 > 30) {
@@ -41,21 +46,24 @@ int main(void) {
         return 0;
     }
 
-    // Verificando o ano da primeira data
-    if (ano1 < 1) {
+    // Pedindo a segunda data
+    printf("Insira outra data (somente os números): ");
+    scanf("%d %d %d", &dia2, &mes2, &ano2);
+
+    // Validando a segunda data
+    // Verificando o ano da segunda
+    if (ano2 < 1) {
         printf("Ano da primeira data inválido!\n");
         return 0;    
     }
-
-    // Validando a segunda data
-    printf("Insira outra data (somente os números): ");
-    scanf("%d %d %d", &dia2, &mes2, &ano2);
+    // Verificando se o número de dias condiz com o mês
     if (mes2 == 4 || mes2 == 6 || mes2 == 9 || mes2 == 11) {
         if (dia2 > 30) {
             printf("O dia da segunda data é inválido\n");
             return 0;
         }
     } else if (mes2 == 2){
+        // Validando se é ano bissexto para a quantida de dias em Fevereiro
         if (ano2 % 4 == 0 && ano2 % 100 == 1 || ano2 % 400 == 0) {
             if (dia2 > 29) {
                 printf("O dia da segunda data é inválido\n");
@@ -72,16 +80,13 @@ int main(void) {
             printf("O dia da segunda data é inválido\n");
             return 0;
         }
+    // Constatando que o mês está incorreto
     } else {
         printf("O mês da segunda data é inválido\n");
         return 0;
     }
 
-    if (ano2 < 1) {
-        printf("Ano da primeira data inválido!\n");
-        return 0;    
-    }
-
+    // Verificando qual data é maior
     if (ano1 == ano2) {
         if (mes1 == mes2) {
             if (dia1 == dia2) {

@@ -22,8 +22,7 @@ int main(void) {
         }
     } else if (mes1 == 2){
         // Validando se é ano bissexto para a quantida de dias em Fevereiro
-        printf("%i\n", ano1);
-        if (ano1 % 4 == 0 && ano1 % 100 == 1 || ano1 % 400 == 0) {
+        if ((ano1 % 4 == 0 && ano1 % 100 != 0) || (ano1 % 400 == 0)) {
             if (dia1 > 29) {
                 printf("O dia da primeira data é inválido\n");
                 return 0;
@@ -63,7 +62,7 @@ int main(void) {
         }
     } else if (mes2 == 2){
         // Validando se é ano bissexto para a quantida de dias em Fevereiro
-        if (ano2 % 4 == 0 && ano2 % 100 == 1 || ano2 % 400 == 0) {
+        if ((ano1 % 4 == 0 && ano1 % 100 != 0) || (ano1 % 400 == 0)) {
             if (dia2 > 29) {
                 printf("O dia da segunda data é inválido\n");
                 return 0;

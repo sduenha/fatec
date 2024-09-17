@@ -3,7 +3,9 @@
 int main(void) {
     int dia1, dia2, mes1, mes2, ano1, ano2;
 
-    printf("Insira uma data (somente os números): ");
+    printf("Insira uma data (somente os números)\n");
+    printf("Como o exemplo: 19 8 2024\n");
+    printf("Sua data: ");
     scanf("%i %i %i", &dia1, &mes1, &ano1);
 
     printf("Insira outra data (somente os números): ");

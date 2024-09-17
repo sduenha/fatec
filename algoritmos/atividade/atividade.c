@@ -24,11 +24,14 @@ int main(void) {
                 return 0;
             }
         }
-    } else {
+    } else if (mes1 == 1 || mes1 == 3 || mes1 == 5 || mes1 == 7 || mes1 == 8 || mes1 == 10 || mes1 == 12) {
         if (dia1 > 31) {
             printf("O dia da primeira data é inválido\n");
             return 0;
         }
+    } else {
+        printf("O mês da primeira data é inválido\n");
+        return 0;
     }
 
     printf("Insira outra data (somente os números): ");
@@ -56,17 +59,6 @@ int main(void) {
             return 0;
         }
     }
-
-    // if (dia1 > 31 || dia1 < 1 || dia2 > 31 || dia2 < 1) {
-    //     printf("Os dias forncecidos são inválidos!\n");
-    //     return 0;
-    // } else if (mes1 > 12 || mes1 < 1 || mes2 > 12 || mes2 < 1) {
-    //     printf("Os meses forncecidos são inválidos!\n");
-    //     return 0;
-    // } else if (ano1 < 0 || dia2 < 0) {
-    //     printf("Os anos fornecidos são inválidos!\n");
-    //     return 0;
-    // }
 
     if (ano1 == ano2) {
         if (mes1 == mes2) {

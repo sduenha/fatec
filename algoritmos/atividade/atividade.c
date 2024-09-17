@@ -17,30 +17,30 @@ int main(void) {
     // Verificando se o número de dias condiz com o mês
     if (mes1 == 4 || mes1 == 6 || mes1 == 9 || mes1 == 11) {
         if (dia1 > 30) {
-            printf("O dia da primeira data é inválido\n");
+            printf("O dia da primeira data é inválido!\n");
             return 0;
         }
     } else if (mes1 == 2){
         // Validando se é ano bissexto para a quantida de dias em Fevereiro
         if ((ano1 % 4 == 0 && ano1 % 100 != 0) || (ano1 % 400 == 0)) {
             if (dia1 > 29) {
-                printf("O dia da primeira data é inválido\n");
+                printf("O dia da primeira data é inválido!\n");
                 return 0;
             }
         } else {
             if (dia1 > 28) {
-                printf("O dia da primeira data é inválido\n");
+                printf("O dia da primeira data é inválido!\n");
                 return 0;
             }
         }
     } else if (mes1 == 1 || mes1 == 3 || mes1 == 5 || mes1 == 7 || mes1 == 8 || mes1 == 10 || mes1 == 12) {
         if (dia1 > 31) {
-            printf("O dia da primeira data é inválido\n");
+            printf("O dia da primeira data é inválido!\n");
             return 0;
         }
     // Constatando que o mês está incorreto
     } else {
-        printf("O mês da primeira data é inválido\n");
+        printf("O mês da primeira data é inválido!\n");
         return 0;
     }
 
@@ -57,30 +57,30 @@ int main(void) {
     // Verificando se o número de dias condiz com o mês
     if (mes2 == 4 || mes2 == 6 || mes2 == 9 || mes2 == 11) {
         if (dia2 > 30) {
-            printf("O dia da segunda data é inválido\n");
+            printf("O dia da segunda data é inválido!\n");
             return 0;
         }
     } else if (mes2 == 2){
         // Validando se é ano bissexto para a quantida de dias em Fevereiro
         if ((ano2 % 4 == 0 && ano2 % 100 != 0) || (ano2 % 400 == 0)) {
             if (dia2 > 29) {
-                printf("O dia da segunda data é inválido\n");
+                printf("O dia da segunda data é inválido!\n");
                 return 0;
             }
         } else {
             if (dia2 > 28) {
-                printf("O dia da segunda data é inválido\n");
+                printf("O dia da segunda data é inválido!\n");
                 return 0;
             }
         }
     } else if (mes2 == 1 || mes2 == 3 || mes2 == 5 || mes2 == 7 || mes2 == 8 || mes2 == 10 || mes2 == 12) {
         if (dia2 > 31) {
-            printf("O dia da segunda data é inválido\n");
+            printf("O dia da segunda data é inválido!\n");
             return 0;
         }
     // Constatando que o mês está incorreto
     } else {
-        printf("O mês da segunda data é inválido\n");
+        printf("O mês da segunda data é inválido!\n");
         return 0;
     }
 

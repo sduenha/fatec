@@ -11,6 +11,29 @@ int main(void) {
     printf("Insira outra data (somente os números): ");
     scanf("%d %d %d", &dia2, &mes2, &ano2);
 
+    if (mes1 == 4 || mes1 == 6 || mes1 == 9 || mes1 == 11) {
+        if (dia1 > 30) {
+            printf("O dia da primeira data é inválido\n");
+            return 0;
+        }
+    } else if (mes1 == 2){
+        if (ano1 % 4 == 0 && ano1 % 100 == 1 || ano1 % 400 == 0) {
+            if (dia1 > 29) {
+                printf("O dia da primeira data é inválido\n");
+            }
+        } else {
+            if (dia1 > 28) {
+                printf("O dia da primeira data é inválido\n");
+            }
+        }
+    } else {
+        if (dia1 > 31) {
+            printf("O dia da primeira data é inválido\n");
+        }
+    }
+
+    2 4 6 9 11
+
     if (dia1 > 31 || dia1 < 1 || dia2 > 31 || dia2 < 1) {
         printf("Os dias forncecidos são inválidos!\n");
         return 0;

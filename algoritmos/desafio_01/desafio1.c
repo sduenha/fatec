@@ -8,7 +8,7 @@ int main(void) {
 
     printf("%c %c %c\n", v1, v2, v3);
 
-    if (v1 == v2 == v3 == 'X') {
+    if (v1 == 'X' || v2 == 'X' || v3 == 'X') {
         printf("x ganhou!");
     }
 }

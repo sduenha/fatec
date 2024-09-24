@@ -3,6 +3,7 @@
 // O programa retorna quem foi o vencedor ou se empatou
 // Samuel Melo Muzy Rehder Duenha - RA: 2760482421016
 // Yan Almeida Mazzucatto - RA: 2760482421017
+
 #include <stdio.h>
 
 int main(void) {

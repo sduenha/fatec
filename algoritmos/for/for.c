@@ -2,4 +2,7 @@
 
 int main(void) {
 
+    int impar, par;
+
+    
 }

@@ -2,9 +2,14 @@
 
 int main(void) {
 
-    int impar, par;
+    int impar, par, laco;
 
-    for( int i = 1; i<=10 ;i++){
+    do{
+        printf("digite o numero de repetições de 1 a 10: ");
+        scanf("%d", &laco);
+    } while (laco < 1 || laco > 10);
+
+    for( int i = 1; i <= laco ;i++){
         if(i % 2 == 0 ){
             printf(" par ");
         } else{

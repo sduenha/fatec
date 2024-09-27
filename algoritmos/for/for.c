@@ -12,7 +12,7 @@ int main(void) {
 
     for( int i = 1; i <= laco ;i++){
         if(i % 2 == 0 ){
-            printf(" par ");
+            printf("%i  par ");
         } else{
             printf("impar");
         }

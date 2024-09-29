@@ -1,6 +1,4 @@
-// O programa recebe os valores de um jogo da velha e retorna quem foi o vencedor
-// O programa recebe os valores em ordem de colunas
-// O programa retorna quem foi o vencedor ou se empatou
+// O programa recebe os valores de um jogo da velha, na forma vertical e retorna quem foi o vencedor ou se houve empate
 // Samuel Melo Muzy Rehder Duenha - RA: 2760482421016
 // Yan Almeida Mazzucatto - RA: 2760482421017
 

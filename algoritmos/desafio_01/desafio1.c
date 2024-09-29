@@ -10,7 +10,7 @@ int main(void) {
     char test = 'X';
 
     // Pedindo ao usuário os valores do jogo
-    printf("Digite o jogo: \n");
+    printf("Digite o jogo, com as casas preenchidas com 'X', 'O' ou '-': \n");
     scanf("%c %c %c %c %c %c %c %c %c", &v1, &v2, &v3, &v4, &v5, &v6, &v7, &v8, &v9);
 
     // Iniciando um for para verificar as possíbilidades

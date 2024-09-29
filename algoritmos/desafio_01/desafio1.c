@@ -17,13 +17,15 @@ int main(void) {
 
     // Iniciando um for para verificar as possíbilidades
     for (int i = 0; i < 2; i ++) {
-        // Verificando todas as possibilidades de vitória
+        // Verificando se houve vitória nas linhas
         if ((v1 == test && v2 == test && v3 == test) || (v4 == test && v5 == test && v6 == test) || (v7 == test && v8 == test && v9 == test)) {
             printf("%c ganhou!\n", test);
             return 0;
+        // Verificando se houve vitória nas colunas
         }else if((v1 == test && v4 == test && v7 == test) || (v2 == test && v5 == test && v8 == test) || (v3 == test && v6 == test && v9 == test)) {
             printf("%c ganhou!\n", test);
             return 0;
+        // Verificando se houve vitória nas diagonais
         } else if ((v1 == test && v5 == test && v9 == test) || (v3 == test && v5 == test && v7 == test)) {
             printf("%c ganhou!\n", test);
             return 0;

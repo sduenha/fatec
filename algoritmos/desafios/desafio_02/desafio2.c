@@ -71,6 +71,7 @@ int testPerfeito(int num) {
         aux--;
     }
     if (divisores == num) {
+        printf("É perfeito!\n");
         return num * 3;
     } else {
         return 0;
@@ -78,7 +79,7 @@ int testPerfeito(int num) {
 }
 
 int testTriangular(int num) {
-    return num;
+
 }
 
 int resultado(int ryu, int ken) {

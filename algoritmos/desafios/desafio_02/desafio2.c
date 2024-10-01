@@ -28,10 +28,8 @@ int main(void) {
 
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
-                printf("Ryu: %i\n", ryu[1]);
             } else if (golpe < 0) {
                 ken[1] += testNum(golpe * -1);
-                printf("Ken: %i\n", ken[1]);
                 validador = 1;
             } else if (golpe > 0 && validador == 1) {
                 ultimo = golpe;
@@ -41,8 +39,12 @@ int main(void) {
 
         if (ryu[1] > ken[1]) {
             ryu[0] ++;
+            printf("Ryu: %i\n", ryu[1]);
+            printf("Ken: %i\n", ken[1]);
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;
+            printf("Ryu: %i\n", ryu[1]);
+            printf("Ken: %i\n", ken[1]);
         }
         ryu[1] = 0;
         ken[1] = 0;
@@ -100,8 +102,6 @@ int resultado(int ryu, int ken) {
     if (ryu > ken) {
         printf("O vencedor é o Ryu!\n");
     } else if (ken > ryu) {
-        printf("Ryu: %i\n", ryu);
-        printf("Ken: %i\n", ken);
         printf("O vencedor é o Ken!\n");
     } else {
         printf("Houve empate!\n");

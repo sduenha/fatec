@@ -12,17 +12,16 @@ int main(void) {
     int round = 0, validador = 0, golpe = 1;
     int ryu[2] = {0,0}, ken[2] = {0,0};
     
-    while (1) {
-        scanf("%i", &golpe);
-        if (golpe == 0) {
-            resultado(ryu[0], ken[0]);
-            ryu[1] = 0;
-            ken[1] = 0;
-            validador = 0;
-            break;
-        }
-
+    while (golpe != 0) {
         while (round != 1) {
+            scanf("%i", &golpe);
+            if (golpe == 0) {
+                resultado(ryu[0], ken[0]);
+                ryu[1] = 0;
+                ken[1] = 0;
+                validador = 0;
+                break;
+            }
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
             } else if (golpe < 0) {

@@ -16,10 +16,19 @@ int main(void) {
     printf("Eleitor 2, selecione o seu candidato: ");
     scanf("%i", &eleitor2);
     if (eleitor2 == 1) {
+        if (eleitor2 == eleitor1) {
+            sequencia1 ++;
+        }
         candidato1 ++;
     } else if (eleitor2 == 2) {
+        if (eleitor2 == eleitor1) {
+            sequencia2 ++;
+        }
         candidato2 ++;
     } else if (eleitor2 == 3) {
+        if (eleitor2 == eleitor1) {
+            sequencia3 ++;
+        }
         candidato3 ++;
     }
 

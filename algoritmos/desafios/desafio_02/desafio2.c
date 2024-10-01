@@ -40,6 +40,9 @@ int main(void) {
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;
         }
+        ryu[1] = 0;
+        ken[1] = 0;
+        validador = 0;
         round = 0;
     }
 
@@ -61,13 +64,19 @@ int testNum(int num) {
 }
 
 int testPerfeito(int num) {
-
+    return num;
 }
 
 int testTriangular(int num) {
-
+    return num;
 }
 
 int resultado(int ryu, int ken) {
-
+    if (ryu > ken) {
+        printf("O vencedor é o Ryu!\n");
+    } else if (ken > ryu) {
+        printf("O vencedor é o Ken!\n");
+    } else {
+        printf("Houve empate!\n");
+    }
 }

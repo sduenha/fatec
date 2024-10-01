@@ -24,16 +24,15 @@ int main(void) {
             }
 
             if (golpe > 0 && validador == 0) {
-                printf("Golpe do Ryu\n");
                 ryu[1] += testNum(golpe);
             } else if (golpe < 0) {
-                printf("Golpe do Ken\n");
                 ken[1] += testNum(golpe);
                 validador == 1;
             } else if (golpe > 0 && validador == 1) {
-                round = 1;
                 printf("Fim do round!\n");
+                round = 1;
             }
+            printf("\n%i\n", validador);
         }
 
         if (ryu[1] > ken[1]) {

@@ -13,6 +13,9 @@ int main(void) {
     int ryu[2] = {0,0}, ken[2] = {0,0};
     
     while (golpe != 0) {
+        if (ultimo != 0) {
+            ryu[1] += testNum(ultimo);
+        }
         while (round != 1) {
             scanf("%i", &golpe);
             if (golpe == 0) {
@@ -25,8 +28,10 @@ int main(void) {
 
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
+                printf("Ryu: %i\n", ryu[1]);
             } else if (golpe < 0) {
                 ken[1] += testNum(golpe * -1);
+                printf("Ken: %i\n", ken[1]);
                 validador = 1;
             } else if (golpe > 0 && validador == 1) {
                 ultimo = golpe;

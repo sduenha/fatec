@@ -101,6 +101,9 @@ int main(void) {
         } else if (sequencia2 < sequencia3) {
             printf("O candidato 3 venceu!\n");
         } else {
+            printf("%i", candidato1);
+            printf("%i", candidato2);
+            printf("%i", candidato3);
             printf("Empatou\n");
         }
     }

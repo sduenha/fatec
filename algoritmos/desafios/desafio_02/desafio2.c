@@ -62,7 +62,7 @@ int testNum(int num) {
 }
 
 int testPerfeito(int num) {
-    int aux = num;
+    int aux = num - 1;
     int divisores = 0;
     while (aux != 0) {
         if (num % aux == 0) {
@@ -70,8 +70,11 @@ int testPerfeito(int num) {
         }
         aux--;
     }
-    printf("%i\n", divisores);
-    return num;
+    if (divisores == num) {
+        return num * 3;
+    } else {
+        return 0;
+    }
 }
 
 int testTriangular(int num) {

@@ -25,20 +25,15 @@ int main(void) {
 
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
-                printf("Validador: %i\n", validador);
             } else if (golpe < 0) {
                 ken[1] += testNum(golpe);
-                validador == 1;
-                printf("Validador: %i\n", validador);
+                validador = 1;
             } else if (golpe > 0 && validador == 1) {
-                printf("Fim do round!\n");
-                printf("Validador: %i\n", validador);
                 round = 1;
             }
         }
 
         if (ryu[1] > ken[1]) {
-            printf("Vitória\n");
             ryu[0] ++;
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;

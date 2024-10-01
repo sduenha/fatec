@@ -19,6 +19,10 @@ int main(void) {
         while (round != 1) {
             scanf("%i", &golpe);
 
+            if (golpe == 0) {
+                break;
+            }
+
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
             } else if (golpe < 0) {
@@ -32,12 +36,8 @@ int main(void) {
 
         if (ryu[1] > ken[1]) {
             ryu[0] ++;
-            printf("Ryu: %i\n", ryu[1]);
-            printf("Ken: %i\n", ken[1]);
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;
-            printf("Ryu: %i\n", ryu[1]);
-            printf("Ken: %i\n", ken[1]);
         }
         ryu[1] = 0;
         ken[1] = 0;

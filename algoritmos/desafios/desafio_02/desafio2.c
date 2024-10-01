@@ -9,7 +9,7 @@ int main(void) {
     printf("Início da luta!\nValores positivos são os ataques do Ryu\nValores negativos são os ataques sofridos pelo Ryu\n");
     printf("Insira o valor dos golpes!\n");
     printf("Valendo!\n");
-    int round = 0, validador = 0, golpe = 1;
+    int round = 0, validador = 0, golpe = 1, ultimo = 0;
     int ryu[2] = {0,0}, ken[2] = {0,0};
     
     while (golpe != 0) {
@@ -29,6 +29,7 @@ int main(void) {
                 ken[1] += testNum(golpe * -1);
                 validador = 1;
             } else if (golpe > 0 && validador == 1) {
+                ultimo = golpe;
                 round = 1;
             }
         }

@@ -14,7 +14,6 @@ int main(void) {
     
     while (1) {
         scanf("%i", &golpe);
-
         if (golpe == 0) {
             resultado(ryu[0], ken[0]);
             ryu[1] = 0;

@@ -10,10 +10,20 @@ int main(void) {
     printf("Valendo!\n");
     int round = 0;
     int fim = 0;
+    int ken, ryu;
     int golpe;
 
-    
-    scanf("%i", &golpe);
+    while (fim != 1) {
+        while (round != 1) {
+            scanf("%i", &golpe);
+            if (golpe < 0) {
+                golpe *= -1;
+                ken += testNum(golpe);
+            } else {
+                ryu += testNum(golpe);
+            }
+        }
+    }
 }
 
 int testNum(int num) {

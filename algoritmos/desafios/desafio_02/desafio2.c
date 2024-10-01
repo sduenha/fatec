@@ -62,6 +62,15 @@ int testNum(int num) {
 }
 
 int testPerfeito(int num) {
+    int aux = num;
+    int divisores = 0;
+    while (aux != 0) {
+        if (num % aux == 0) {
+            divisores += aux;
+        }
+        aux--;
+    }
+    printf("%i\n", divisores);
     return num;
 }
 

@@ -5,10 +5,10 @@ int testPerfeito(int num);
 int testTriangular(int num);
 
 int main(void) {
-    int troca = 0;
+    printf("Início da luta")
+    int round = 0;
 
-    while (troca != 1) {
-
+    while (round != 1) {
     }
 }
 

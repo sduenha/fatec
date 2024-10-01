@@ -18,13 +18,6 @@ int main(void) {
         }
         while (round != 1) {
             scanf("%i", &golpe);
-            if (golpe == 0) {
-                resultado(ryu[0], ken[0]);
-                ryu[1] = 0;
-                ken[1] = 0;
-                validador = 0;
-                break;
-            }
 
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
@@ -50,6 +43,9 @@ int main(void) {
         ken[1] = 0;
         validador = 0;
         round = 0;
+        if (golpe == 0) {
+            resultado(ryu[0], ken[0]);
+        }
     }
 
 }

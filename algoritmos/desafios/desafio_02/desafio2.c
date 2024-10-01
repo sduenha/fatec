@@ -100,6 +100,8 @@ int resultado(int ryu, int ken) {
     if (ryu > ken) {
         printf("O vencedor é o Ryu!\n");
     } else if (ken > ryu) {
+        printf("Ryu: %i\n", ryu);
+        printf("Ken: %i\n", ken);
         printf("O vencedor é o Ken!\n");
     } else {
         printf("Houve empate!\n");

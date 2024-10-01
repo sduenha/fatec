@@ -22,9 +22,12 @@ int main(void) {
                 validador = 0;
                 break;
             }
+
             if (golpe > 0 && validador == 0) {
+                printf("Golpe do Ryu\n");
                 ryu[1] += testNum(golpe);
             } else if (golpe < 0) {
+                printf("Golpe do Ken\n");
                 ken[1] += testNum(golpe);
                 validador == 1;
             } else if (golpe > 0 && validador == 1) {

@@ -25,11 +25,14 @@ int main(void) {
 
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
+                printf("Validador: %i\n", validador);
             } else if (golpe < 0) {
                 ken[1] += testNum(golpe);
                 validador == 1;
+                printf("Validador: %i\n", validador);
             } else if (golpe > 0 && validador == 1) {
                 printf("Fim do round!\n");
+                printf("Validador: %i\n", validador);
                 round = 1;
             }
         }

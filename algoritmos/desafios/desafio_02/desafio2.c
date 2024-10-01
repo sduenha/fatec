@@ -14,7 +14,7 @@ int main(void) {
     
     while (1) {
         scanf("%i", &golpe);
-        
+
         if (golpe == 0) {
             resultado(ryu[0], ken[0]);
             ryu[1] = 0;
@@ -31,7 +31,7 @@ int main(void) {
                 validador == 1;
             } else if (golpe > 0 && validador == 1) {
                 round = 1;
-                printf("Fim do primeiro round!\n");
+                printf("Fim do round!\n");
             }
         }
 
@@ -40,6 +40,7 @@ int main(void) {
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;
         }
+        round = 0;
     }
 
 }

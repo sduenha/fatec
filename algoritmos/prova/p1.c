@@ -2,10 +2,7 @@
 
 int main(void) {
     int eleitor1, eleitor2, eleitor3, eleitor4;
-    int candidato1 = 0, candidato2 = 0, candidato3 = 0;
-    int sequencia1 = 0;
-    int sequencia2 = 0;
-    int sequencia3 = 0;
+    int candidato1 = 0, candidato2 = 0, candidato3 = 0, sequencia1 = 0, sequencia2 = 0, sequencia3 = 0;
 
     printf("Eleitor 1, selecione o seu candidato: ");
     scanf("%i", &eleitor1);

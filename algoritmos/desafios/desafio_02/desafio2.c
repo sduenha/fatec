@@ -79,9 +79,19 @@ int testPerfeito(int num) {
 }
 
 int testTriangular(int num) {
-
+    int soma = 0;
+    int m = 1;
+    while (soma < num) {
+        soma += m;
+        if (soma == num) {
+            printf("É triangular!\n");
+            return num * 2;
+        }
+        m ++;
+    }
+    return 0;
 }
-
+ 
 int resultado(int ryu, int ken) {
     if (ryu > ken) {
         printf("O vencedor é o Ryu!\n");

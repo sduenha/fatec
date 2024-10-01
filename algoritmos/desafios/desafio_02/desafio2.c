@@ -13,8 +13,18 @@ int main(void) {
 }
 
 int testNum(int num) {
-    novoNum = testPerfeito(num);
-    if (testPerfeito)
+    int novoNum = testPerfeito(num);
+    if (novoNum) {
+        return novoNum;
+    } else {
+        novoNum = testTriangular(num);
+        if (novoNum) {
+            return novoNum;
+        } else {
+            novoNum = num;
+            return novoNum;
+        }
+    }
 }
 
 int testPerfeito(int num) {

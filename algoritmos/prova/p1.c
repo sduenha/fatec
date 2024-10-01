@@ -83,7 +83,7 @@ int main(void) {
         } else if (sequencia1 < sequencia2) {
             printf("O candidato 2 venceu!\n");
         } else {
-            printf("Empatou\n");
+            printf("Empatou!\n");
         }
     } else if (candidato1 == candidato3) {
         if (sequencia1 > sequencia3) {
@@ -91,7 +91,7 @@ int main(void) {
         } else if (sequencia1 < sequencia3) {
             printf("O candidato 3 venceu!\n");
         } else {
-            printf("Empatou\n");
+            printf("Empatou!\n");
         }
     } else if (candidato2 == candidato3) {
         if (sequencia2 > sequencia3) {
@@ -99,7 +99,7 @@ int main(void) {
         } else if (sequencia2 < sequencia3) {
             printf("O candidato 3 venceu!\n");
         } else {
-            printf("Empatou\n");
+            printf("Empatou!\n");
         }
     } 
 }

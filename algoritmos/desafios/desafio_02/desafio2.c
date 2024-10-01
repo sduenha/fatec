@@ -10,17 +10,22 @@ int main(void) {
     printf("Valendo!\n");
     int round = 0;
     int fim = 0;
+    int ataque = 0;
     int ken, ryu;
     int golpe;
 
     while (fim != 1) {
         while (round != 1) {
             scanf("%i", &golpe);
+            if (ataque = 0) {
+                ryu += testNum(golpe);
+            } else {
+                ataque = 1;
+            }
             if (golpe < 0) {
                 golpe *= -1;
                 ken += testNum(golpe);
             } else {
-                ryu += testNum(golpe);
             }
         }
     }

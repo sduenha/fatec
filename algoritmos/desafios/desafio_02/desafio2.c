@@ -21,7 +21,9 @@ int main(void) {
 
         while (round != 1) {
             if (golpe > 0 && validador == 0) {
-                ryu[1] += testNum(golpe);
+                if (ryu[1] == 0) {
+                    ryu[1] += testNum(golpe);
+                }
             } else if (golpe < 0) {
                 ken[1] += testNum(golpe);
                 validador == 1;

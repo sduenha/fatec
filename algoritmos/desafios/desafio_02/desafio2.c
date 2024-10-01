@@ -26,7 +26,7 @@ int main(void) {
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
             } else if (golpe < 0) {
-                ken[1] += testNum(golpe);
+                ken[1] += testNum(golpe * -1);
                 validador = 1;
             } else if (golpe > 0 && validador == 1) {
                 round = 1;

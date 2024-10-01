@@ -15,33 +15,19 @@ int main(void) {
     int golpe;
 
     while (round != 1) {
-        while (golpe > 0) {
+        scanf("%i", &golpe);
+        if (golpe > 0) {
+            ataque = 1;
+        }
+        if (ataque = 0) {
             ryu += testNum(golpe);
+        } else {
+            ataque = 1;
         }
-
-        while (golpe < 0) {
+        if (golpe < 0) {
+            golpe *= -1;
             ken += testNum(golpe);
-        }
-        round ++;
-    }
-
-
-    while (fim != 1) {
-        while (round != 1) {
-            scanf("%i", &golpe);
-            if (golpe > 0) {
-                ataque = 1;
-            }
-            if (ataque = 0) {
-                ryu += testNum(golpe);
-            } else {
-                ataque = 1;
-            }
-            if (golpe < 0) {
-                golpe *= -1;
-                ken += testNum(golpe);
-            } else {
-            }
+        } else {
         }
     }
 }

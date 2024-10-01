@@ -12,12 +12,8 @@ int main(void) {
     int fim = 0;
     int golpe;
 
-    while (fim != 1) {
-        while (round != 1) {
-            scanf("%i", &golpe);
-        }
-    }
-
+    
+    scanf("%i", &golpe);
 }
 
 int testNum(int num) {

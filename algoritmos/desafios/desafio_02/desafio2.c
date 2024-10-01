@@ -32,10 +32,10 @@ int main(void) {
                 printf("Fim do round!\n");
                 round = 1;
             }
-            printf("\n%i\n", validador);
         }
 
         if (ryu[1] > ken[1]) {
+            printf("Vitória\n");
             ryu[0] ++;
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;

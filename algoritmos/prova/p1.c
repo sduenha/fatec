@@ -1,13 +1,8 @@
 #include <stdio.h>
 
 int main(void) {
-    int candidato1 = 0;
-    int candidato2 = 0;
-    int candidato3 = 0;
-    int eleitor1 = 0; 
-    int eleitor2 = 0;
-    int eleitor3 = 0;
-    int eleitor4 = 0;
+    int eleitor1, eleitor2, eleitor3, eleitor4;
+    int candidato1 = 0, candidato2 = 0, candidato3 = 0;
     int sequencia1 = 0;
     int sequencia2 = 0;
     int sequencia3 = 0;

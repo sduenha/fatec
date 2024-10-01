@@ -5,11 +5,16 @@ int testPerfeito(int num);
 int testTriangular(int num);
 
 int main(void) {
-    printf("Início da luta")
+    printf("Início da luta!\nValores positivos são os ataques do Ryu\nValores negativos são os ataques sofridos pelo Ryu");
     int round = 0;
+    int fim = 0;
 
-    while (round != 1) {
+    while (fim != 1) {
+        while (round != 1) {
+            
+        }
     }
+
 }
 
 int testNum(int num) {

@@ -14,9 +14,20 @@ int main(void) {
     int ken, ryu;
     int golpe;
 
+    while (golpe > 0) {
+        ryu += testNum(golpe);
+    }
+
+    while (golpe < 0) {
+        ken += testNum(golpe);
+    }
+
     while (fim != 1) {
         while (round != 1) {
             scanf("%i", &golpe);
+            if (golpe > 0) {
+                ataque = 1;
+            }
             if (ataque = 0) {
                 ryu += testNum(golpe);
             } else {

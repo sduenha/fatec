@@ -13,19 +13,22 @@ int main(void) {
     int validador = 0;
     int ken, ryu;
     int golpe;
-
-    while (round != 1) {
+    
+    while (golpe != 0) {
         scanf("%i", &golpe);
-        if (golpe > 0 && validador == 0) {
-            ryu += testNum(golpe);
-        } else if (golpe < 0) {
-            ken += testNum(golpe);
-            validador == 1;
-        } else if (golpe > 0 && validador == 1) {
-            round = 1;
-            printf("Fim do primeiro round!\n");
+        while (golpe != 0 && round != 1) {
+            if (golpe > 0 && validador == 0) {
+                ryu += testNum(golpe);
+            } else if (golpe < 0) {
+                ken += testNum(golpe);
+                validador == 1;
+            } else if (golpe > 0 && validador == 1) {
+                round = 1;
+                printf("Fim do primeiro round!\n");
+            }
         }
     }
+
 }
 
 int testNum(int num) {

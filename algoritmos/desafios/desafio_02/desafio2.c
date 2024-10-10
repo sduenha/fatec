@@ -1,9 +1,11 @@
 // Objetivo: Receber valores de golpes, positivos para ataques do Ryu, negativos para ataque do Ken
 // verificar quem ganhou o round (round termina quando há pelo menos 1 ataque de cada)
 // e no final dos round (quando o usuário insere um valor 0 no ataque) o programa retorna o nome do vencedor
-
+// Samuel Melo Muzy Rehder Duenha
+// RA: 2760482421016
 #include <stdio.h>
 
+// Iniciando as funções que vão aparecer depois no código 
 int testNum(int num);
 int testPerfeito(int num);
 int testTriangular(int num);

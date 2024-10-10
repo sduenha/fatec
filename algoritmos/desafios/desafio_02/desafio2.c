@@ -23,9 +23,12 @@ int main(void) {
     
     // Iniciando o loop que vai durar até o usuário finalizar o jogo, digitando "0"
     while (golpe != 0) {
+        // Verificando se teve um ataque que não foi contabilizado
         if (ultimo != 0) {
             ryu[1] += testNum(ultimo);
         }
+
+        // Iniciando o loop que vai verificar o final dos rounds
         while (round != 1) {
             scanf("%i", &golpe);
 

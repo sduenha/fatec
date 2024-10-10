@@ -38,6 +38,7 @@ int main(void) {
                 break;
             }
 
+            // Verificando o golpe e adicionando ao personagem correto
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);
             } else if (golpe < 0) {
@@ -49,15 +50,19 @@ int main(void) {
             }
         }
 
+        // Verificando quem ganhou o round
         if (ryu[1] > ken[1]) {
             ryu[0] ++;
         } else if (ryu[1] < ken[1]) {
             ken[0] ++;
         }
+        // Reiniciando as variáveis
         ryu[1] = 0;
         ken[1] = 0;
         validador = 0;
         round = 0;
+
+        // Verificando, se for o final, quem ganhou
         if (golpe == 0) {
             resultado(ryu[0], ken[0]);
         }
@@ -65,6 +70,7 @@ int main(void) {
 
 }
 
+// Verifica se o golpe deve ser acrescido de pontos ou não
 int testNum(int num) {
     int novoNum = testPerfeito(num);
     if (novoNum) {
@@ -80,6 +86,7 @@ int testNum(int num) {
     }
 }
 
+// Verificando se o número é perfeito
 int testPerfeito(int num) {
     int aux = num - 1;
     int divisores = 0;
@@ -96,6 +103,7 @@ int testPerfeito(int num) {
     }
 }
 
+// Verificando se o número é triângular
 int testTriangular(int num) {
     int soma = 0;
     int m = 1;
@@ -108,7 +116,8 @@ int testTriangular(int num) {
     }
     return 0;
 }
- 
+
+// Printa na tela quem ganhou
 int resultado(int ryu, int ken) {
     if (ryu > ken) {
         printf("O vencedor é o Ryu!\n");

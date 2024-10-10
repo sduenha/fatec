@@ -29,12 +29,8 @@ int main(void) {
         }
 
         // Iniciando o loop que vai verificar o final dos rounds
-        while (round != 1) {
+        while (round != 1 || golpe == 0) {
             scanf("%i", &golpe);
-
-            if (golpe == 0) {
-                break;
-            }
 
             if (golpe > 0 && validador == 0) {
                 ryu[1] += testNum(golpe);

@@ -1,4 +1,7 @@
-// Objetivo: Receber valores de golpes, positivos para ataques do Ryu, negativos para ataque do Ken, 
+// Objetivo: Receber valores de golpes, positivos para ataques do Ryu, negativos para ataque do Ken
+// verificar quem ganhou o round (round termina quando há pelo menos 1 ataque de cada)
+// e no final dos round (quando o usuário insere um valor 0 no ataque) o programa retorna o nome do vencedor
+
 #include <stdio.h>
 
 int testNum(int num);

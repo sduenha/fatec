@@ -1,4 +1,4 @@
-// Objetivo: 
+// Objetivo: Receber valores de golpes, positivos para ataques do Ryu, negativos para ataque do Ken, 
 #include <stdio.h>
 
 int testNum(int num);

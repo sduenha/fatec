@@ -6,9 +6,12 @@ int main(void) {
     printf("Insira o valor do expoente: ");
     scanf("%i", &valor);
 
-    for (int i = 1; i < valor + 1; i++) {
-        base =  base * 2;
+    for (int i = 0; i < valor; i++) {
+        if (i == 0) {
+            printf("%c\n", '1');
+        } else {
+            base =  base * 2;
+        }
         printf("%i\n", base);
     }
-
 }

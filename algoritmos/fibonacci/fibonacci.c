@@ -6,7 +6,7 @@ int main(void) {
     printf("Número: ");
     scanf("%i", &n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         soma += n1 + n2;
         n2 = n1;
         n1 = soma;

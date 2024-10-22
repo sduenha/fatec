@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int n, soma = 0, n1 = 1, n2 = 0;
+    int n, soma = 0, n1 = 1, n2 = 1;
 
     printf("Número: ");
     scanf("%i", &n);

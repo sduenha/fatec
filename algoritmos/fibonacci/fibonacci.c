@@ -13,7 +13,6 @@ int main(void) {
         soma = atual + anterior;
         anterior = atual;
         atual = soma;
-        printf("%i, ", soma);
     }
 
     if (soma == 0) {

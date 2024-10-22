@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main(void) {
-    int n, soma = 0, n1 = 1, n2 = 1;
+    int n, soma = 0, atual = 1, anterior = 1;
 
     printf("Número: ");
     scanf("%i", &n);
 
     for (int i = 1; i < n; i++) {
-        soma += n1 + n2;
-        n2 = n1;
-        n1 = soma;
+        soma = atual + anterior;
+        anterior = atual;
+        atual = soma;
     }
     printf("%i\n", soma);
 }

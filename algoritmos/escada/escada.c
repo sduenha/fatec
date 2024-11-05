@@ -7,7 +7,7 @@ int main(void) {
 
     for(int i = 1; i <= num; i++) {
         for (int j = 1; j <= counter; j++) {
-            printf("%d", counter);
+            printf("%d", j);
         }
         counter++;
         printf("\n");

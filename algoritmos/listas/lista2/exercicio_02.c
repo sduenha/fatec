@@ -10,5 +10,9 @@ int main(void) {
         value *= a;
     }
 
+    if (b == 0) {
+        value = 1;
+    }
+
     printf("Valor: %d\n", value);
 }

@@ -5,4 +5,8 @@ int main(void) {
 
     print("Escolha dois números, separados com espaço: ");
     scanf("%d %d", &a, &b);
+
+    for (int i = 1; i <= b; i++) {
+        a *= b;
+    }
 }

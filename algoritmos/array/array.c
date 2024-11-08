@@ -1,17 +1,13 @@
 #include <stdio.h>
 
 int main(void) {
-    int vetor1[5], vetor2[5], vetor3[5];
+    int vetor1[5], vetor2[5], soma = 0;
 
     for (int i = 0; i < 5; i++) {
         printf("Digite dois valores: ");
         scanf("%d %d", &vetor1[i], &vetor2[i]);
-        vetor3[i] = vetor1[i] * vetor2[i];
+        soma += vetor1[i] * vetor2[i];
     }
 
-    for (int i = 0; i < 5; i++) {
-        printf("%d ", vetor3[i]);
-    }
-
-    printf("\n");
+    printf("%d\n", soma);
 }

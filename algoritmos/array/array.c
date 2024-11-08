@@ -8,6 +8,10 @@ int main(void) {
         scanf("%d %d", &vetor1[i], &vetor2[i]);
         vetor3[i] = vetor1[i] * vetor2[i];
     }
-    
+
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", vetor3[i]);
+    }
+
     printf("\n");
 }

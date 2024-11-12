@@ -8,12 +8,12 @@ int main(void) {
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             if (vetor1[i] == vetor2[j]) {
-                iguais ++;
+                iguais = 1;
             }
         }
     }
 
-    if (iguais == 0) {
+    if (!iguais) {
         printf("Não há elementos em comum\n");
     }
 }

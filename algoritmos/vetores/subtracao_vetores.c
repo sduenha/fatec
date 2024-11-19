@@ -16,11 +16,12 @@ int main(void) {
         }
     }
 
+    printf("\n");
+
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
-            printf("%f ", mat1[i][j]);
+            printf("%2.f ", mat1[i][j]);
         }
         printf("\n");
     }
-
 }

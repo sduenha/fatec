@@ -9,7 +9,12 @@ int main(void) {
     printf("Dimensões das matrizes (max. 10): ");
     scanf("%d", &n);
 
-    printf("Lendo os dados da matriz 1, linha por linha");
+    printf("Lendo os dados da matriz 1, linha por linha\n");
+    for (i = 0; i <  n; i++) {
+        for (j = 0; j < n; i++) {
+            scanf("%lf", &mat1[i][j]);
+        }
+    }
 
 
 }

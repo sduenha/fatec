@@ -4,6 +4,7 @@
 int main(void) {
 
     double mat1[MAX][MAX];
+    double mat2[MAX][MAX];
     int i, j, n;
 
     printf("Dimensões das matrizes (max. 10): ");
@@ -20,7 +21,7 @@ int main(void) {
 
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
-            printf("%2.f ", mat1[i][j]);
+            printf("%.2lf ", mat1[i][j]);
         }
         printf("\n");
     }

@@ -28,7 +28,7 @@ int main(void) {
     for (i = 0; i < n; i ++) {
         for (j = 0; j < n; j++) {
             mult[j][i] = mat1[i][j] * mat2[i][j];
-            printf("%lf", mult[i][j]);
+            printf("%.2lf ", mult[i][j]);
         }
         printf("\n");
     }

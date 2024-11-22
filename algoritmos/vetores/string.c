@@ -10,13 +10,15 @@ int main(void) {
 
     for (int i = 80; i > 0; i--) {
         reversa[counter] = string[i];
+        printf("%c\n", string[i]);
         counter++;
     }
 
-    reversa[80] = "\0";
+    reversa[80] = '\0';
 
     for (int i = 0; i < 80; i++) {
         printf("%c", reversa[i]);
     }
 
+    printf("\n");
 }

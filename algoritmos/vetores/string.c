@@ -3,17 +3,18 @@
 int main(void) {
     char string[80];
     char reversa[80];
-    int counter = 0;
+    int counter = 79;
+    int reverso_counter = 0;
 
     printf("Digite 79 caracteres: ");
     scanf("%s", string);
 
-    for (int i = 78; i > 0; i--) {
-        reversa[counter] = string[i];
-        printf("%c\n", string[i]);
-        counter++;
+    while (string[counter] != '\0') {
+        reversa[reverso_counter] = string[counter];
+        counter --;
+        reverso_counter++;
     }
-
+    
     reversa[80] = '\0';
 
     for (int i = 0; i < 80; i++) {

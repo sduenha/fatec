@@ -13,4 +13,10 @@ int main(void) {
         counter++;
     }
 
+    reversa[80] = "\0";
+
+    for (int i = 0; i < 80; i++) {
+        printf("%c", reversa[i]);
+    }
+
 }

@@ -8,7 +8,7 @@ int main(void) {
     printf("Digite 79 caracteres: ");
     scanf("%s", string);
 
-    for (int i = 80; i > 0; i--) {
+    for (int i = 78; i > 0; i--) {
         reversa[counter] = string[i];
         printf("%c\n", string[i]);
         counter++;

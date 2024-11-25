@@ -18,7 +18,6 @@ int main(void) {
         counter ++;
     }
 
-    while (reverso_counter)
-
+    
     printf("\n");
 }

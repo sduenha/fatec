@@ -10,11 +10,11 @@ int main()
     printf("Escolha uma palavra: ");
     scanf("%s", escolha);
 
-    while (st1[i] != "\n" && st1[i] != "\0") {
-        if (st1[i] == " ") {
+    while (st1[i] != '\n' && st1[i] != '\0') {
+        if (st1[i] == ' ') {
             i++;
         }
-        while (st1 != " " && st1 != "\n" && st1 != "\0") {
+        while (st1 != ' ' && st1 != '\n' && st1 != '\0') {
             j = 0;
             palavra[j] = st1[i];
             j++;
@@ -26,8 +26,8 @@ int main()
         }
     }
 
-    printf("Quantidade de palavras: %d", &palavras);
-    printf("Quantidade de palavras iguais: %d", &palavras_iguais);
+    printf("Quantidade de palavras: %d", palavras);
+    printf("Quantidade de palavras iguais: %d", palavras_iguais);
 
     return 0;
 }

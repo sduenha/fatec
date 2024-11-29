@@ -5,7 +5,7 @@ int main(void) {
     int length = 0, counter = 0, j = 0;
 
     printf("Digite 79 caracteres: ");
-    scanf("%s", string);
+    fgets(string, 80, stdin);
 
     while (string[length] != '\0') {
         length ++;

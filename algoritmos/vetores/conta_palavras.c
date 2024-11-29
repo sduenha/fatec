@@ -29,6 +29,7 @@ int main()
         if (strlen(palavra) > 0)  {
             palavras++;
             if (strcmp(escolha, palavra) == 0) {
+                
                 palavras_iguais ++;
             }
         }

@@ -8,7 +8,7 @@ int main()
     printf("Escreve uma frase de no máximo 79:" );
     fgets(st1, 80, stdin);
     printf("Escolha uma palavra: ");
-    scanf("%c", escolha);
+    scanf("%s", escolha);
 
     while (st1[i] != "\n" && st1[i] != "\0") {
         if (st1[i] == " ") {
@@ -25,7 +25,7 @@ int main()
             palavras_iguais ++;
         }
     }
-    
+
     printf("Quantidade de palavras: %d", &palavras);
     printf("Quantidade de palavras iguais: %d", &palavras_iguais);
 

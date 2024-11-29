@@ -9,6 +9,7 @@ int main()
     fgets(st1, 80, stdin);
     printf("Escolha uma palavra: ");
     scanf("%c", escolha);
+
     while (st1[i] != "\n" && st1[i] != "\0") {
         if (st1[i] == " ") {
             i++;
@@ -24,6 +25,7 @@ int main()
             palavras_iguais ++;
         }
     }
+    
     printf("Quantidade de palavras: %d", &palavras);
     printf("Quantidade de palavras iguais: %d", &palavras_iguais);
 

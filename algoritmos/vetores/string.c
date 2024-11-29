@@ -11,27 +11,22 @@ int main(void) {
         length ++;
     }
 
-    for (int i = 0, j = length; i < length; i++, j--) {
-        printf("Entrou");
+    for (int i = 0, j = length - 1; i < length; i++, j--) {
         reversa[i] = string[j];
-        printf("%c", reversa[i]);
     }
-    printf("%d\n", length);
     reversa[length] = '\0';
 
     j = 0;
     while (reversa[j] != '\0') {
         printf("%c", reversa[j]);
-        printf("Sim");
         j++;
     }
+    printf("\n");
 
     j = 0;
     while (string[j] != '\0') {
         printf("%c", string[j]);
         j++;
     }
-    
-
     printf("\n");
 }

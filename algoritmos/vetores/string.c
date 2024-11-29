@@ -18,6 +18,5 @@ int main(void) {
         counter ++;
     }
 
-    
     printf("\n");
 }

@@ -13,13 +13,12 @@ int main(void) {
 
     for (int i = 0, j = length; i < length; i++, j--) {
         reversa[i] = string[j];
-
     } 
-    while (counter != length - 1) {
-        reversa[counter] = string[length];
-        counter ++;
+    reversa[length] = '\0';
 
-    }
+    j = 0;
+    while ()
+    
 
     printf("\n");
 }

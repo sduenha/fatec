@@ -6,7 +6,7 @@ int main()
     char st1[80], palavra[40], escolha[40];
     int i = 0, j = 0, palavras = 0, palavras_iguais = 0;
 
-    printf("Escreve uma frase de no máximo 79:" );
+    printf("Escreve uma frase de no máximo 79: " );
     fgets(st1, 80, stdin);
 
     printf("Escolha uma palavra: ");
@@ -19,7 +19,7 @@ int main()
         }
 
         j = 0;
-        while (st1 != ' ' && st1 != '\n' && st1 != '\0') {
+        while (st1[i] != ' ' && st1[i] != '\n' && st1[i] != '\0') {
             palavra[j] = st1[i];
             j++;
             i++;
@@ -34,8 +34,8 @@ int main()
         }
     }
 
-    printf("Quantidade de palavras: %d", palavras);
-    printf("Quantidade de palavras iguais: %d", palavras_iguais);
+    printf("Quantidade de palavras: %d\n", palavras);
+    printf("Quantidade de palavras iguais: %d\n", palavras_iguais);
 
     return 0;
 }

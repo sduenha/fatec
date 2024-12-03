@@ -42,4 +42,8 @@ int main(void) {
     if (strcmp(senha, inversa)) {
         verificacao[5] = 1;
     }
+
+    for (int i = 0; i < num_dicionario; i ++) {
+        
+    }
 }

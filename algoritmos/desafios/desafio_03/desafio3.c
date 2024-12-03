@@ -69,4 +69,8 @@ int main(void) {
             break;
         }
     }
+
+    if (count_erros == 0) {
+        printf("ok\n");
+    }
 }

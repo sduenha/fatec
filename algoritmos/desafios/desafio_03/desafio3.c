@@ -4,7 +4,7 @@
 
 int main(void) {
     char senha[50], inversa[50], dicionario[50][20], erros[7][50];
-    int num_dicionario, tamanho_senha, count_erros = 0, verificacao[7], j;
+    int num_dicionario, tamanho_senha, count_erros = 0, verificacao[4] = {0, 0, 0, 0}, j;
 
     printf("Quantas palavra terá o dicionário? ");
     scanf("%d", &num_dicionario);
@@ -20,35 +20,53 @@ int main(void) {
     tamanho_senha = strlen(senha);
 
     if (tamanho_senha < 8) {
-        strcpy(erros[count_erros], "A senha deve conter pelo menos 8 caracteres");
+        printf("A senha deve conter pelo menos 8 caracteres\n");
         count_erros ++;
     }
 
     for (int i = 0, j = tamanho_senha - 1; i < tamanho_senha; i ++, j --) {
         if (islower(senha[i])) {
-            verificacao[1] = 1;
+            verificacao[0] = 1;
         } else if (isupper(senha[i])) {
-            verificacao[2] = 1;
+            verificacao[1] = 1;
         } else if (isdigit(senha[i])) {
+            verificacao[2] = 1;
+        } else if(senha[i] == '!' || senha[i] == '?' || senha[i] == '#' || senha[i] == '@' || senha[i] == '$') {
             verificacao[3] = 1;
-        } else if(senha[i] == "!" || senha[i] == "?" || senha[i] == "#" || senha[i] == "@" || senha[i] == "$") {
-            verificacao[4] = 1;
         }
         inversa[i] = senha[j];
     }
 
-    inversa[tamanho_senha] = senha[tamanho_senha];
+    for (int i = 0; i < 4; i++) {
+        if (verificacao[0] == 0) {
+            printf("A senha deve conter pelo menos uma letra maiuscula\n");
+            count_erros ++;
+        }
+        if (verificacao[1] == 0) {
+            printf("A senha deve conter pelo menos uma letra minuscula\n");
+            count_erros ++;
+        }
+        if (verificacao[2] == 0) {
+            printf("A senha deve conter pelo menos um numero\n");
+            count_erros ++;
+        }
+        if (verificacao[3] == 0) {
+            printf("A senha deve conter pelo menos um simbolo\n");
+            count_erros ++;
+        }
+    }
 
-    if (strcmp(senha, inversa)) {
-        verificacao[5] = 1;
+    inversa[tamanho_senha] = senha[tamanho_senha];
+    if (!strcmp(senha, inversa)) {
+        printf("A senha e um palindromo\n");
+        count_erros ++;
     }
 
     for (int i = 0; i < num_dicionario; i ++) {
         if (strstr(senha, dicionario[i])) {
-            strcpy(erros[count_erros], "A senha nao pode conter palavras reservadas");
+            printf("A senha nao pode conter palavras reservadas\n");
             count_erros ++;
             break;
         }
-        
     }
 }

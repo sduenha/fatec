@@ -45,7 +45,8 @@ int main(void) {
 
     for (int i = 0; i < num_dicionario; i ++) {
         if (strstr(senha, dicionario[i])) {
-            
+            strcpy(erros[count_erros], "A senha nao pode conter palavras reservadas");
+            count_erros ++;
             break;
         }
         

@@ -20,7 +20,6 @@ int main(void) {
     tamanho_senha = strlen(senha);
 
     if (tamanho_senha < 8) {
-        verificacao[0] = 1;
         strcpy(erros[count_erros], "A senha deve conter pelo menos 8 caracteres");
         count_erros ++;
     }
@@ -41,6 +40,6 @@ int main(void) {
     inversa[tamanho_senha] = senha[tamanho_senha];
 
     if (strcmp(senha, inversa)) {
-        
+        verificacao[5] = 1;
     }
 }

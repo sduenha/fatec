@@ -37,23 +37,21 @@ int main(void) {
         inversa[i] = senha[j];
     }
 
-    for (int i = 0; i < 4; i++) {
-        if (verificacao[0] == 0) {
-            printf("A senha deve conter pelo menos uma letra maiuscula\n");
-            count_erros ++;
-        }
-        if (verificacao[1] == 0) {
-            printf("A senha deve conter pelo menos uma letra minuscula\n");
-            count_erros ++;
-        }
-        if (verificacao[2] == 0) {
-            printf("A senha deve conter pelo menos um numero\n");
-            count_erros ++;
-        }
-        if (verificacao[3] == 0) {
-            printf("A senha deve conter pelo menos um simbolo\n");
-            count_erros ++;
-        }
+    if (verificacao[0] == 0) {
+        printf("A senha deve conter pelo menos uma letra maiuscula\n");
+        count_erros ++;
+    }
+    if (verificacao[1] == 0) {
+        printf("A senha deve conter pelo menos uma letra minuscula\n");
+        count_erros ++;
+    }
+    if (verificacao[2] == 0) {
+        printf("A senha deve conter pelo menos um numero\n");
+        count_erros ++;
+    }
+    if (verificacao[3] == 0) {
+        printf("A senha deve conter pelo menos um simbolo\n");
+        count_erros ++;
     }
 
     inversa[tamanho_senha] = senha[tamanho_senha];

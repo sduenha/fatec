@@ -12,6 +12,6 @@ int main(void) {
     char dicionario[num_dicionario];
     printf("Digite as palavras, uma por linha: \n");
     for (int i = 0; i < num_dicionario; i ++) {
-        strcpy(dicionario[i], scanf("%s"));
+        scanf("%s", dicionario[i]);
     }
 }

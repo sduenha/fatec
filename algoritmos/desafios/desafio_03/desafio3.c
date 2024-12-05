@@ -1,4 +1,8 @@
-// Alunos: Samuel Melo Muzy Rehder Duenha (RA: )
+// Objetivos do código: Verificar se a senha fornecida pelo usuário segue os padrões pedidos, que são: ter pelo menos 8 caracteres, uma letra minúscula, uma maiúscula, um número, um dos seguintes símbulos: !, ?, #, @, $, não ser um palíndromo e não conter palavras reservadas, as quais são fornecidas pelo usuário.
+
+// Entradas: Primeiro pede o número de palavras reservadas, depois as palavras reservadas uma por linha e por fim a senha.
+
+// Alunos: Samuel Melo Muzy Rehder Duenha (RA: 2760482421016)
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>

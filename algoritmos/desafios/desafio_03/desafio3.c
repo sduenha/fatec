@@ -21,9 +21,11 @@ int main(void) {
     scanf("%d", &num_dicionario);
 
     // Adicionando as palavras ao dicionário
-    printf("Digite as palavras, uma por linha: \n");
-    for (int i = 0; i < num_dicionario; i ++) {
-        scanf("%s", dicionario[i]);
+    if (num_dicionario > 0) {
+        printf("Digite as palavras, uma por linha: \n");
+        for (int i = 0; i < num_dicionario; i ++) {
+            scanf("%s", dicionario[i]);
+        }
     }
 
     // Pedindo a senha do usuário

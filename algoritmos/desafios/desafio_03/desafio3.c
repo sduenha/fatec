@@ -62,7 +62,6 @@ int main(void) {
     }
 
     for (int i = 0; i < num_dicionario; i ++) {
-        printf("%s -> %s\n", senha, dicionario[i]);
         if (strcasestr(senha, dicionario[i])) {
             printf("A senha nao pode conter palavras reservadas\n");
             count_erros ++;

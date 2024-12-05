@@ -6,7 +6,7 @@
 
 // Alunos: Samuel Melo Muzy Rehder Duenha (RA: 2760482421016)
 
-#define _GNU_SOURCE
+    #define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

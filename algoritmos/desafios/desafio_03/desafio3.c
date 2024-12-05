@@ -25,11 +25,14 @@ int main(void) {
     // Descobrindo o tamanho da senha
     tamanho_senha = strlen(senha);
 
+    // Faz a verificação do tamanho
     if (tamanho_senha < 8) {
         printf("A senha deve conter pelo menos 8 caracteres\n");
         count_erros ++;
     }
 
+    // Itera por toda a senha para fazer as verificações de minúscula, maiúscula, número e símbulo
+    // Aproveia a iteração para escrever a inversa
     for (int i = 0, j = tamanho_senha - 1; i < tamanho_senha; i ++, j --) {
         if (islower(senha[i])) {
             verificacao[0] = 1;

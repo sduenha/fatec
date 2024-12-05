@@ -45,7 +45,10 @@ int main(void) {
         }
         inversa[i] = senha[j];
     }
+    // Adiciona o \0 a string inversa
+    inversa[tamanho_senha] = senha[tamanho_senha];
 
+    // Faz os printis dos erros
     if (verificacao[0] == 0) {
         printf("A senha deve conter pelo menos uma letra maiuscula\n");
         count_erros ++;
@@ -63,7 +66,6 @@ int main(void) {
         count_erros ++;
     }
 
-    inversa[tamanho_senha] = senha[tamanho_senha];
     if (!strcmp(senha, inversa)) {
         printf("A senha e um palindromo\n");
         count_erros ++;

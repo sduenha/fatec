@@ -1,3 +1,4 @@
+// Alunos: Samuel Melo Muzy Rehder Duenha (RA: )
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>
@@ -48,7 +49,7 @@ int main(void) {
     // Adiciona o \0 a string inversa
     inversa[tamanho_senha] = senha[tamanho_senha];
 
-    // Faz os printis dos erros
+    // Faz os prints dos erros de minúscula, maiúscula, número e símbulo
     if (verificacao[0] == 0) {
         printf("A senha deve conter pelo menos uma letra maiuscula\n");
         count_erros ++;
@@ -66,11 +67,14 @@ int main(void) {
         count_erros ++;
     }
 
+    // Verifica se é um palíndromo
     if (!strcmp(senha, inversa)) {
         printf("A senha e um palindromo\n");
         count_erros ++;
     }
 
+    // Itera por cada palavra no dicionário e ve se tem na senha
+    // Se encontrar uma quebra o loop
     for (int i = 0; i < num_dicionario; i ++) {
         if (strcasestr(senha, dicionario[i])) {
             printf("A senha nao pode conter palavras reservadas\n");
@@ -79,6 +83,7 @@ int main(void) {
         }
     }
 
+    //  Verifica se encontrou erros, se não printa ok
     if (count_erros == 0) {
         printf("ok\n");
     }

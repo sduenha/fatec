@@ -2,7 +2,10 @@
 
 // Entradas: Primeiro pede o número de palavras reservadas, depois as palavras reservadas uma por linha e por fim a senha.
 
+// Saídas: Se a senha não infríngir nenhum requisito o programa retorna "ok", caso contrário o programa retorna quais requisitos não foram cumpridos
+
 // Alunos: Samuel Melo Muzy Rehder Duenha (RA: 2760482421016)
+
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>

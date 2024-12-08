@@ -4,16 +4,16 @@
 
 // Saídas: Se a senha não infríngir nenhum requisito o programa retorna "ok", caso contrário o programa retorna quais requisitos não foram cumpridos
 
-// Alunos: Samuel Melo Muzy Rehder Duenha (RA: 2760482421016)
+// Alunos: Samuel Melo Muzy Rehder Duenha (RA: 2760482421016), Yan Almeida Mazzucatto (RA: 2760482421017)
 
-    #define _GNU_SOURCE
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
 int main(void) {
     // Declaração de variáveis
-    char senha[50], inversa[50], dicionario[50][20], erros[7][50];
+    char senha[50], inversa[50], dicionario[50][20];
     int num_dicionario, tamanho_senha, count_erros = 0, verificacao[4] = {0, 0, 0, 0}, j;
 
     // Pedindo ao usuário o número de palavras do dicionário

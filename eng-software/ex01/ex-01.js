@@ -28,3 +28,6 @@ lerArquivo();
 // Adicionar os números ao arquivo com nome "numeros.json", um em cada linha, seguidos de vírgula.
 // Rodar o código no terminal com "node ex-01", o código retornará o maior número escrito
 // Caso tenham letras ou textos escritos no arquivo o código retornará o maior número, ignorando os valores não numéricos
+
+// Falhas
+// Mudar o nome do arquivo onde tem os números

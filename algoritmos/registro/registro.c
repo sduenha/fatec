@@ -14,10 +14,12 @@ void imprimiPonto(int posicao) {
 
 void pegaPontos(int numPontos) {
     for (int i = 0; i < numPontos; i ++) {
+        printf("Coordenada %i", i);
         printf("Digite o ponto X da coordenada: ");
         scanf("%f", &pontos[i].x);
         printf("Digite o ponto Y da coordenada: ");
         scanf("%f", &pontos[i].y);
+        printf("\n");
     }
 }
 

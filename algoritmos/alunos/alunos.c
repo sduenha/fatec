@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+const int QUANTIDADE = 5;
+
 typedef struct typeAlunos {
     int ra;
     int idade;
 } typeAlunos;
 
-typeAlunos alunos[5];
+typeAlunos alunos[QUANTIDADE];
 
 void pegarAlunos(int numAlunos) {
     for (int i = 0; i < numAlunos; i ++) {
@@ -30,7 +32,7 @@ float somarIdade(int numAlunos) {
 
 int main()
 {
-    pegarAlunos(5);
-    float media = somarIdade(5);
+    pegarAlunos(QUANTIDADE);
+    float media = somarIdade(QUANTIDADE);
     printf("%.2f\n", media);
 }

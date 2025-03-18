@@ -3,7 +3,7 @@
 int encontraMenor(int *vet, int posicao) {
     int min = posicao;
     for (int i = posicao + 1; i < 6; i++) {
-        if (vet[i] < vet[min]) {
+        if (vet[i] > vet[min]) {
             min = i;
         }
     }

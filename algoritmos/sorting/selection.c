@@ -2,8 +2,8 @@
 
 int encontraMenor(int *vet, int posicao) {
     int min = posicao;
-    for (int i = posicao; i < 5 - posicao; i++) {
-        if (vet[i + 1] < vet[i]) {
+    for (int i = posicao + 1; i < 6; i++) {
+        if (vet[i] < vet[min]) {
             min = i;
         }
     }
@@ -11,20 +11,26 @@ int encontraMenor(int *vet, int posicao) {
     return min;
 }
 
-int trocaNum(int menor, int maior, int *vet) {
-    int aux = vet[menor];
+int trocaNum(int posica_menor, int ida, int *vet) {
+    int aux = vet[ida];
 
-    vet[menor] = vet[maior];
+    vet[ida] = vet[posica_menor];
     
-    vet[maior] = aux;
+    vet[posica_menor] = aux;
 }
 
 int main(void) {
-    int vet[5] = {5, 3, 2, 1, 90, 6};
+    int vet[6] = {5, 3, 2, 1, 90, 6};
     int posicao_menor;
 
-    for (int i = 0; i < 5; i ++) {
+    for (int i = 0; i < 6; i ++) {
         posicao_menor = encontraMenor(vet, i);
         trocaNum(posicao_menor, i, vet);
     }
+
+    for (int i = 0; i < 6; i++) {
+        printf("%d ", vet[i]);
+    }
+
+    printf("\n");
 }

@@ -1,3 +1,4 @@
+// Aluno: Samuel Melo Muzy Rehder Duenha
 #include <stdio.h>
 
 double media(double vet[], int n, int *i);

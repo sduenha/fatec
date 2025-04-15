@@ -2,19 +2,19 @@
 #include <math.h>
 
 void menor_base_log(int n, int *b, int *k) {
-    int x, y;
-    int resultado;
 
-    for (x = 2; x <= n; x++) {
-        for (y = 1; y <= n; y++) {
-            resultado = pow(x, y);
+    int resultado;
+    for (int i = 0; i <= n; i ++) {
+        for (int j = 1; j <= n; j++) {
+            resultado = pow(i, j);
             if (resultado == n) {
-                *b = x;
-                *k = y;
+                *b = i;
+                *k = j;
                 return;
             }
-            if (resultado > n)
-                break;
+        }
+        if (resultado > n) {
+            break;
         }
     }
 
@@ -22,20 +22,17 @@ void menor_base_log(int n, int *b, int *k) {
     *k = -1;
 }
 
-int main() {
-    int n;
-    int b, k;
+int main(void) {
+    int n, b, k;
 
     printf("Digite um número: ");
     scanf("%d", &n);
 
     menor_base_log(n, &b, &k);
 
-    if (b == -1 && k == -1) {
-        printf("Não há base e expoente inteiros que satisfazem a condição para n = %d\n", n);
+    if (b < 0 && k < 0) {
+        printf("Não em base e expoente para esse número\n");
     } else {
         printf("%d ** %d = %d\n", b, k, n);
     }
-
-    return 0;
 }

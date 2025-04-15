@@ -3,7 +3,7 @@
 
 int e_primo(int n) {
     float raiz = sqrt(n);
-    for (int i = 2; i < raiz; i++) {
+    for (int i = 2; i <= raiz; i++) {
         if (n % i == 0) return 0;
     }
     return 1;

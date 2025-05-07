@@ -23,10 +23,20 @@ int * addVet(int *vet, int * size, int * max_size, int value) {
         new_vet = grow(*max_size * 2, size, max_size, vet);
     }
     
-    *size = *size + 1;
     new_vet[*size] = value;
+    *size = *size + 1;
 
     return new_vet;
+}
+
+void printVet(int *v, int size, int maxSize) {
+    printf("Tamanho do vetor: %d\n", maxSize);
+    printf("Tamanho usado: %d\n", size);
+    printf("Vetor: ");
+    for (int i = 0; i < size; i++) {
+        if (i < size - 1) printf("%d, ", v[i]);
+        else printf("%d\n", v[i]);
+    }
 }
 
 int removeVet(void) {
@@ -57,12 +67,9 @@ int main(void) {
 
     values = addVet(values, &size, &max_size, 30);
 
-    for (int i = 0; i < size; i++) {
-        printf("%d, ", values[i]);
-    }
+    printVet(values, size, max_size);
 
-    printf("\n");
-
+    free(values);
     return 0;
 
 }

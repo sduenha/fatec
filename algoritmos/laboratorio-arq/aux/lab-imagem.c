@@ -47,14 +47,36 @@ void writeImage(char *arqSaida, int R[MAX][MAX], int G[MAX][MAX], int B[MAX][MAX
 }
 
 void esticarContraste(int R[MAX][MAX], int G[MAX][MAX], int B[MAX][MAX], int novaR[MAX][MAX], int novaG[MAX][MAX], int novaB[MAX][MAX], int cols, int rows){
-	// Insira seu código aqui
+	int i, j, minR = R[0][0], maxR = 0, minG = G[0][0], maxG = 0, minB = B[0][0], maxB = 0;
+	for (i = 0; i < rows; i++) {
+		for (j = 0; j < cols; j++) {
+			if (R[i][j] > maxR) maxR = R[i][j];
+			if (R[i][j] < minR) minR = R[i][j];
+			if (G[i][j] > maxG) maxG = G[i][j];
+			if (G[i][j] < minG) minG = G[i][j];
+			if (B[i][j] > maxB) maxB = B[i][j];
+			if (B[i][j] < minB) minB = B[i][j];
+		}
+	}
+
+	for (i = 0; i < rows; i++) {
+		for (j = 0; j < cols; j++) {
+			novaR[i][j] = ((R[i][j] - minR) * 255)/(maxR - minR);
+			novaG[i][j] = ((G[i][j] - minG) * 255)/(maxG - minG);
+			novaB[i][j] = ((B[i][j] - minB) * 255)/(maxB - minB);
+		}
+	}
 } 
 
 void escalaCinza(int R[MAX][MAX], int G[MAX][MAX], int B[MAX][MAX], int novaR[MAX][MAX], int novaG[MAX][MAX], int novaB[MAX][MAX], int cols, int rows){
-	// Insira seu código aqui
-	// novaR[X][Y] = (imagemR[X][Y] + imagemG[X][Y] + imagemB[X][Y]) / 3;
-	// novaG[X][Y] = novaR[X][Y];
-	// novaB[X][Y] = novaR[X][Y];
+	int i, j;
+	for (i = 0; i < rows; i++) {
+		for (j = 0; j < cols; j++) {
+			novaR[i][j] = (R[i][j] + G[i][j] + B[i][j]) / 3;
+			novaG[i][j] = novaR[i][j];
+			novaB[i][j] = novaR[i][j];
+		}
+	}
 }
 
 int main(int argc, char **argv) {
@@ -75,8 +97,19 @@ int main(int argc, char **argv) {
 
   scanf("%s", efeito);
 
-  printf("%s", efeito);
-	// Insira seu código aqui
+  readImage(arqEntrada, R, G, B, &cols, &rows);
+
+  if (strcmp(efeito, "cinza") == 0){
+	escalaCinza(R, G, B, novaR, novaG, novaB, cols, rows);
+  } else if (strcmp(efeito, "esticar") == 0) {
+	esticarContraste(R, G, B, novaR, novaG, novaB, cols, rows);
+  } else {
+	printf("O efeito escolhido não existe!\n");
+	return 1;
+  }
+
+  writeImage(arqSaida, novaR, novaG, novaB, cols, rows);
+  
 
 
   return 0;

@@ -114,7 +114,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h1>Calculadora de Combustível</h1>
     
-    <form method="POST">
+    <form method="POST" onsubmit="return validateForm()">
         <label for="alcool">Preço do Álcool (R\$):</label>
         <input type="number" id="alcool" name="alcool" step="0.01" 
                value="<?php echo isset($_POST['alcool']) ? htmlspecialchars($_POST['alcool']) : ''; ?>" required>
@@ -138,5 +138,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <li>Se (Preço Álcool ÷ Preço Gasolina) ≥ 0.7 → Use Gasolina</li>
         </ul>
     </div>
+
+    <script>
+        function validateForm() {
+            const alcool = document.getElementById('alcool').value;
+            const gasolina = document.getElementById('gasolina').value;
+            
+            if (isNaN(alcool) || alcool <= 0) {
+                alert('Por favor, insira um valor numérico válido para o álcool (maior que zero)');
+                return false;
+            }
+            
+            if (isNaN(gasolina) || gasolina <= 0) {
+                alert('Por favor, insira um valor numérico válido para a gasolina (maior que zero)');
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
 </body>
 </html>
